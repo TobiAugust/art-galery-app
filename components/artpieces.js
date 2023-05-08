@@ -1,9 +1,7 @@
-import ArtPiecePreview from "./artpiecepreview";
-
-export default function ArtPieces({ pieces }) {
+export default function ArtPieces({ artPieces }) {
   return (
     <ul>
-      {pieces.map((piece) => (
+      {artPieces.map((piece) => (
         <li key={piece.id}>
           <ArtPiecePreview
             image={piece.image}
